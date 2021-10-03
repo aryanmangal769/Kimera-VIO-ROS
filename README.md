@@ -2,6 +2,23 @@
 
 ROS Wrapper for [Kimera](https://github.com/MIT-SPARK/Kimera).
 
+- Offline ROSbag launch error
+
+```jsx
+F1002 22:18:44.842500 133745 RosBagDataProvider.cpp:222] Check failed: vio_params_.backend_params_->autoInitialize_ == 1 (0 vs. 1) Requested ground-truth initialization, but no gt_odom_topic was given. Make sure you set ground_truth_odometry_rosbag_topic, or turn autoInitialize to false in BackendParameters.yaml.
+```
+
+To resolve this go to Kimera-VIO repo.
+
+Change the autoinitialize parameter from  0 → 1. in 
+
+    /catkin_ws/src/Kimera-VIO/params/EurocMono/BackendParam.yaml
+
+    /catkin_ws/src/Kimera-VIO/params/Euroc/BackendParam.yaml
+
+BUILD AGAIN
+
+
 - mesh_rviz_plugins error: refer to the link : [here](https://github.com/ToniRV/mesh_rviz_plugins/issues/3)
 
 <div align="center">
