@@ -18,6 +18,8 @@ Change the autoinitialize parameter from  0 → 1. in
 
 BUILD AGAIN
 
+* To run online mode change default parameter for online to true in the kimera_vio_ros_euroc.launch file
+
 
 - mesh_rviz_plugins error: refer to the link : [here](https://github.com/ToniRV/mesh_rviz_plugins/issues/3)
 
