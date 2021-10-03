@@ -2,6 +2,8 @@
 
 ROS Wrapper for [Kimera](https://github.com/MIT-SPARK/Kimera).
 
+- mesh_rviz_plugins error: refer to the link : [here](https://github.com/ToniRV/mesh_rviz_plugins/issues/3)
+
 <div align="center">
     <img src="docs/media/Kimera-VIO-ROS_mesh.gif">
 </div>
